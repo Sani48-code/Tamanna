@@ -105,10 +105,35 @@
       background-image: radial-gradient(#FCE7F3 1px, transparent 0);
       background-size: 24px 24px;
     }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(105vh) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.9;
+      }
+
+      90% {
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: translateY(-20vh) rotate(25deg);
+        opacity: 0;
+      }
+    }
+
+    .animate-float-up {
+      animation: floatUp linear forwards;
+    }
   </style>
 </head>
 
-<body class="font-sans bg-[#FFF5F5] text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900 pb-24 overflow-x-hidden">
+<body
+  class="font-sans bg-[#FFF5F5] text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900 pb-24 overflow-x-hidden">
 
   <!-- Header Navigation -->
   <header class="fixed top-0 left-0 right-0 z-40 glass-card border-b border-rose-100/50 px-4 py-3">
@@ -189,6 +214,15 @@
             <span class="text-xs uppercase tracking-wider text-slate-500 font-semibold mt-1 block">Seconds</span>
           </div>
         </div>
+
+        <!-- Special Post-Countdown Romantic Message Container -->
+        <div id="countdownFinishedMsg"
+          class="hidden opacity-0 translate-y-4 transition-all duration-700 mt-6 p-6 rounded-2xl bg-gradient-to-r from-rose-500/10 via-pink-500/15 to-rose-500/10 border border-rose-400/40 text-center shadow-lg max-w-2xl mx-auto">
+          <p
+            class="font-serif text-lg sm:text-2xl font-bold bg-gradient-to-r from-rose-600 via-pink-600 to-rose-600 bg-clip-text text-transparent leading-relaxed drop-shadow-sm">
+            আজ আমার জীবনের সবচেয়ে সেরা এবং পছন্দের মানুষের জন্মদিন, শুভ জন্মদিন আমার ভালোবাসা! 🎂💖✨
+          </p>
+        </div>
       </div>
     </section>
 
@@ -208,7 +242,8 @@
             <span>আমাদের মিষ্টি মুহূর্ত</span>
           </div>
 
-          <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-rose-50">একটি সুন্দর ইচ্ছে করো এবং কেক কাটো</h2>
+          <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-rose-50">একটি সুন্দর ইচ্ছে করো এবং কেক
+            কাটো</h2>
           <p class="text-xs sm:text-sm text-rose-200/80 max-w-md mx-auto leading-relaxed px-2">
             প্রথমে ভালোবেসে মোমবাতিগুলো নিভিয়ে দাও, তারপর আমার সাথে হাত মিলিয়ে জন্মদিনের কেক কেটে বিশেষ সারপ্রাইজটি আনলক
             করো! 🎂💖
@@ -253,12 +288,14 @@
               </div>
 
               <!-- Layered Cake Graphic -->
-              <div class="relative w-48 sm:w-64 md:w-80 h-32 sm:h-40 md:h-48 mx-auto flex flex-col items-center justify-end">
+              <div
+                class="relative w-48 sm:w-64 md:w-80 h-32 sm:h-40 md:h-48 mx-auto flex flex-col items-center justify-end">
                 <!-- Top Frosting Layer -->
                 <div
                   class="w-40 sm:w-56 md:w-64 h-10 sm:h-14 md:h-16 bg-gradient-to-r from-pink-400 via-rose-300 to-pink-400 rounded-t-2xl sm:rounded-t-3xl shadow-inner border-b-2 sm:border-b-4 border-rose-400 relative overflow-hidden flex items-center justify-center">
                   <div class="absolute inset-x-0 bottom-0 h-2 sm:h-3 bg-white/40 rounded-full"></div>
-                  <span class="text-rose-950 font-serif italic text-[11px] sm:text-xs md:text-sm font-bold tracking-wide">Tamanna
+                  <span
+                    class="text-rose-950 font-serif italic text-[11px] sm:text-xs md:text-sm font-bold tracking-wide">Tamanna
                     💕</span>
                 </div>
                 <!-- Middle Layer -->
@@ -275,7 +312,8 @@
                 <!-- Bottom Base Layer -->
                 <div
                   class="w-48 sm:w-72 md:w-80 h-10 sm:h-14 md:h-16 bg-gradient-to-r from-amber-100 via-rose-100 to-amber-100 rounded-b-xl sm:rounded-b-2xl shadow-xl relative border-t sm:border-t-2 border-rose-300 flex items-center justify-center">
-                  <span class="text-rose-500 text-[10px] sm:text-xs tracking-widest font-bold uppercase">Happy Birthday</span>
+                  <span class="text-rose-500 text-[10px] sm:text-xs tracking-widest font-bold uppercase">Happy
+                    Birthday</span>
                 </div>
                 <!-- Cake Plate Base -->
                 <div
@@ -319,7 +357,8 @@
           and cherished memories together.</p>
       </div>
 
-      <div class="relative border-l-2 border-rose-300 ml-4 sm:ml-12 md:ml-16 space-y-10 sm:space-y-12 pr-2 max-w-4xl mx-auto">
+      <div
+        class="relative border-l-2 border-rose-300 ml-4 sm:ml-12 md:ml-16 space-y-10 sm:space-y-12 pr-2 max-w-4xl mx-auto">
 
         <!-- Timeline Item 1 -->
         <div class="relative pl-6 sm:pl-10 group">
@@ -445,7 +484,8 @@
       <div class="text-center mb-10">
         <span class="text-rose-600 text-xs font-bold uppercase tracking-widest">Memories Gallery</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Moments I Keep Close in My Heart</h2>
-        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mt-2">Tap any photo to expand and relive the magic.</p>
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mt-2">Tap any photo to expand and relive the magic.
+        </p>
       </div>
 
       <!-- Masonry Grid -->
@@ -708,18 +748,21 @@
         <span class="text-rose-600 text-xs font-bold uppercase tracking-widest">Tamanna & Sani Special</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">8 Reasons You Are My Favorite Person
         </h2>
-        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mt-2">Tap each card to reveal the photo and my personal
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mt-2">Tap each card to reveal the photo and my
+          personal
           message for you ✨</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 
         <!-- Reason Card 1 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">01</span>
               <div class="text-center space-y-3">
@@ -734,27 +777,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/birthday girl.png" onerror="this.src='./image/birthday girl.png'"
-                  alt="Your Radiant Kindness" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/birthday girl.png" onerror="this.src='./images/birthday girl.png'"
+                  alt="Your Radiant Kindness" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "যেভাবে তুমি সবাইকে আপন করে নাও, তোমার এই মায়াবী মনটাই সানিকে প্রতিদিন নতুন করে তোমার প্রেমে ফেলে।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                যেভাবে তুমি সবাইকে আপন করে নাও, তোমার এই মায়াবী মনটাই সানিকে প্রতিদিন নতুন করে তোমার প্রেমে ফেলে।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 2 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">02</span>
               <div class="text-center space-y-3">
@@ -769,27 +811,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/smile.png" onerror="this.src='./image/IMG_20241227_115335_543.jpg'"
-                  alt="Your Infectious Laugh" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/IMG_20241227_115335_543.jpg" onerror="this.src='./images/smile.png'"
+                  alt="Your Infectious Laugh" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "তোমার হাসির আওয়াজ শুনলে আমার সব ক্লান্তি নিমেষেই দূর হয়ে যায়। সবসময় এভাবেই হেসে যেও।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                তোমার হাসির আওয়াজ শুনলে আমার সব ক্লান্তি নিমেষেই দূর হয়ে যায়। সবসময় এভাবেই হেসে যেও।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 3 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">03</span>
               <div class="text-center space-y-3">
@@ -803,27 +844,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/couple.jpeg" onerror="this.src='./image/couple.jpeg'" alt="My Safest Haven"
-                  loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/couple.jpeg" onerror="this.src='./images/couple.jpeg'" alt="My Safest Haven"
+                  class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "বাইরের দুনিয়া যতই কঠিন হোক না কেন, তোমার পাশে থাকাটাই আমার সবচেয়ে শান্তির জায়গা।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                বাইরের দুনিয়া যতই কঠিন হোক না কেন, তোমার পাশে থাকাটাই আমার সবচেয়ে শান্তির জায়গা।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 4 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">04</span>
               <div class="text-center space-y-3">
@@ -838,27 +878,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/Unfiltered Joys.png" onerror="this.src='./image/Unfiltered Joys.png'"
-                  alt="Your Expressive Eyes" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/Unfiltered Joys.png" onerror="this.src='./images/Unfiltered Joys.png'"
+                  alt="Your Expressive Eyes" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "না বলা হাজারটা কথা তোমার এই চোখ দুটোতেই স্পষ্ট বোঝা যায়।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                না বলা হাজারটা কথা তোমার এই চোখ দুটোতেই স্পষ্ট বোঝা যায়।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 5 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">05</span>
               <div class="text-center space-y-3">
@@ -873,27 +912,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/Our Late-Night Talks.png" onerror="this.src='./image/IMG_20250426_112639_889.jpg'"
-                  alt="Our Late-Night Talks" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/IMG_20250426_112639_889.jpg" onerror="this.src='./images/Our Late-Night Talks.png'"
+                  alt="Our Late-Night Talks" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "দূরত্ব থাকলেও রাতে তোমার মিষ্টি গলার কথাগুলো আমার নির্ঘুম রাতগুলোকে রঙিন করে তোলে।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                দূরত্ব থাকলেও রাতে তোমার মিষ্টি গলার কথাগুলো আমার নির্ঘুম রাতগুলোকে রঙিন করে তোলে।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 6 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">06</span>
               <div class="text-center space-y-3">
@@ -908,27 +946,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/Golden Afternoons.png" onerror="this.src='./image/Golden Afternoons.png'"
-                  alt="My Greatest Strength" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/Golden Afternoons.png" onerror="this.src='./images/Golden Afternoons.png'"
+                  alt="My Greatest Strength" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "আমার সব সাফল্য আর প্রতিটি কাজের পেছনে তোমার নিঃশব্দ সাপোর্ট আর প্রার্থনাই আমার ভরসা।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                আমার সব সাফল্য আর প্রতিটি কাজের পেছনে তোমার নিঃশব্দ সাপোর্ট আর প্রার্থনাই আমার ভরসা।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 7 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">07</span>
               <div class="text-center space-y-3">
@@ -942,28 +979,26 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/Forever & Beyond.png" onerror="this.src='./image/Forever & Beyond.png'"
-                  alt="Our Shared Future" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/Forever & Beyond.png" onerror="this.src='./images/Forever & Beyond.png'"
+                  alt="Our Shared Future" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "আমাদের সেই ছোট্ট স্বপ্নের বাড়ি, সংসার আর এক ছাদের নিচে থাকার প্রতিটি স্বপ্ন আমি তোমার সাথেই পূরণ
-                  করব।"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                আমাদের সেই ছোট্ট স্বপ্নের বাড়ি, সংসার আর এক ছাদের নিচে থাকার প্রতিটি স্বপ্ন আমি তোমার সাথেই পূরণ করব।
+              </p>
             </div>
           </div>
         </div>
 
         <!-- Reason Card 8 -->
-        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
-          <div class="flip-card-inner relative w-full h-full">
+        <div class="card-item group relative h-[440px] w-full [perspective:1000px] cursor-pointer"
+          onclick="toggleFlipCard(this)">
+          <div
+            class="card-inner relative h-full w-full rounded-2xl transition-transform duration-700 [transform-style:preserve-3d]">
             <!-- Front Face -->
             <div
-              class="flip-card-front absolute inset-0 glass-card bg-white/85 backdrop-blur-md rounded-2xl p-6 flex flex-col justify-between border-2 border-rose-200/80 shadow-md group-hover:-translate-y-1 group-hover:shadow-rose-200/50 transition-all duration-300">
+              class="absolute inset-0 h-full w-full rounded-2xl p-6 bg-white border-2 border-rose-100 shadow-md flex flex-col items-center justify-between [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
               <span
                 class="inline-block text-rose-600 font-serif font-bold text-base sm:text-lg bg-rose-100/80 px-3 py-0.5 rounded-full self-start">08</span>
               <div class="text-center space-y-3">
@@ -978,17 +1013,14 @@
             </div>
             <!-- Back Face -->
             <div
-              class="flip-card-back absolute inset-0 bg-gradient-to-br from-rose-500 via-rose-600 to-pink-600 rounded-2xl p-4 text-white flex flex-col justify-between shadow-xl border-2 border-rose-400/50 overflow-hidden">
-              <div
-                class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
-                <img src="./images/candle light.png" onerror="this.src='./image/candle light.png'"
-                  alt="Simply Being Tamanna" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
+              class="absolute inset-0 h-full w-full rounded-2xl p-4 bg-rose-50 border border-rose-100 shadow-md flex flex-col items-center justify-between [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-hidden">
+              <div class="w-full h-48 rounded-xl overflow-hidden mb-3 flex-shrink-0">
+                <img src="./image/candle light.png" onerror="this.src='./images/candle light.png'"
+                  alt="Simply Being Tamanna" class="w-full h-full object-cover block" />
               </div>
-              <div class="py-2 text-center flex-grow flex items-center justify-center">
-                <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
-                  "তুমি যেমন আছো ঠিক তেমনই সানীর পুরো পৃথিবী। শুভ জন্মদিন আমার প্রিয় মানুষ!"
-                </p>
-              </div>
+              <p class="text-sm font-medium text-slate-800 text-center leading-relaxed">
+                তুমি যেমন আছো ঠিক তেমনই সানীর পুরো পৃথিবী। শুভ জন্মদিন আমার প্রিয় মানুষ!
+              </p>
             </div>
           </div>
         </div>
@@ -1098,20 +1130,6 @@
                 alt="Health & Serenity" loading="lazy" decoding="async"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
               <div
-                class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/80 backdrop-blur-md text-rose-600 flex items-center justify-center shadow-md border border-white/50 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
-                <i data-lucide="sparkles" class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
-              </div>
-            </div>
-            <h3 class="font-serif text-xl font-bold text-slate-800 group-hover:text-rose-700 transition-colors">
-              Health & Serenity</h3>
-            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
-              Wishing you robust health, tranquil moments of rest, and the warmth of true companionship always.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
                 class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/80 backdrop-blur-md text-rose-600 flex items-center justify-center shadow-md border border-white/50 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
                 <i data-lucide="sparkles" class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
               </div>
@@ -1284,6 +1302,65 @@
       </div>
     </section>
 
+    <!-- SECTION 8.5: COZY & INTIMATE ROMANTIC CTA (WHATSAPP INTEGRATION) -->
+    <section class="my-16 sm:my-20 relative px-4 overflow-x-hidden">
+      <div
+        class="bg-[#0d0914] text-slate-100 rounded-3xl p-6 sm:p-10 md:p-12 border border-rose-500/20 shadow-2xl relative overflow-hidden max-w-5xl mx-auto">
+        <!-- Ambient Glowing Background lights -->
+        <div class="absolute -top-20 -left-20 w-80 h-80 bg-rose-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-amber-500/15 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+
+          <!-- Column 1: Image Container with Subtle Glow -->
+          <div class="relative group">
+            <div
+              class="absolute -inset-2 bg-gradient-to-r from-rose-500/20 to-amber-500/20 rounded-3xl blur-xl pointer-events-none group-hover:scale-105 transition-transform duration-500">
+            </div>
+            <div
+              class="relative rounded-3xl overflow-hidden shadow-2xl border border-rose-500/20 h-[360px] md:h-[440px] w-full">
+              <img src="./image/romantic vibe.png" onerror="this.src='./images/romantic vibe.png'"
+                alt="Romantic Vibe Tamanna & Sani" loading="lazy" decoding="async"
+                class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-[#0d0914]/60 via-transparent to-transparent pointer-events-none">
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Romantic Content & Direct WhatsApp Button -->
+          <div class="space-y-6 text-center md:text-left">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
+              <i data-lucide="heart" class="w-3.5 h-3.5 text-rose-400 fill-rose-400 animate-pulse"></i>
+              <span>শুধু তুমি আর আমি</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-rose-50 leading-tight">
+              চলো এবার সব ক্লান্তি ভুলে কাছে আসি
+            </h2>
+
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-light max-w-lg mx-auto md:mx-0">
+              দূরত্ব আর ব্যস্ততার সব গল্প আজ এখানেই থামুক। চলো এবার কাছে এসে আমাদের আসল গল্পটা শুরু করি, যেখানে থাকবে
+              শুধু গভীর
+              ভালোবাসা আর নতুন স্বপ্নের সূচনা।
+            </p>
+
+            <div class="pt-2">
+              <a href="https://wa.me/8801745947359?text=Jan,%20cholo%20amader%20notun%20golpo%20suru%20kori...%20I%20love%20you%20so%20much!"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-medium text-base sm:text-lg shadow-lg shadow-rose-500/30 hover:scale-105 transition duration-300 w-full sm:w-auto">
+                <i data-lucide="message-circle" class="w-6 h-6 fill-white/20"></i>
+                <span>Let's Make A Baby💖</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- SECTION 9: FOOTER -->
@@ -1342,8 +1419,8 @@
       <!-- Couple Photo Header (Uncropped Full Image) -->
       <div
         class="relative w-full rounded-2xl overflow-hidden mb-5 bg-black/20 p-1 border border-rose-500/20 shadow-lg shadow-rose-500/10 flex items-center justify-center">
-        <img src="./image/kiss.png" onerror="this.src='./images/kiss.png'" alt="Sani & Tamanna" loading="lazy" decoding="async"
-          class="w-full h-auto max-h-[45vh] sm:max-h-[50vh] object-contain rounded-2xl mx-auto">
+        <img src="./image/kiss.png" onerror="this.src='./images/kiss.png'" alt="Sani & Tamanna" loading="lazy"
+          decoding="async" class="w-full h-auto max-h-[45vh] sm:max-h-[50vh] object-contain rounded-2xl mx-auto">
         <div
           class="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-slate-950/80 to-transparent pointer-events-none rounded-b-2xl">
         </div>
@@ -1392,40 +1469,82 @@
       });
     }
 
-    // Dynamic Countdown Timer (Targeting Tonight 12:00 AM / 5th Midnight)
-    function startCountdown() {
-      const now = new Date();
-      let targetYear = now.getFullYear();
-      let targetMonth = now.getMonth();
-      // Target midnight 00:00:00 of the 5th
-      let targetDate = new Date(targetYear, targetMonth, 5, 0, 0, 0);
+    // Continuous Floating Romantic Particles Animation
+    let particleInterval = null;
+    function startFloatingParticles() {
+      if (particleInterval) return;
+      const container = document.getElementById('floatingParticlesContainer');
+      if (!container) return;
 
-      if (now > targetDate) {
-        targetDate = new Date(targetYear, targetMonth + 1, 5, 0, 0, 0);
-      }
+      const items = ['💋', '😘', '💖', '❤️', '🎈', '🎂', '✨'];
+
+      particleInterval = setInterval(() => {
+        const particle = document.createElement('div');
+        particle.className = 'absolute animate-float-up pointer-events-none select-none z-40';
+
+        particle.innerText = items[Math.floor(Math.random() * items.length)];
+        particle.style.left = (Math.random() * 92 + 2) + '%';
+        particle.style.bottom = '-60px';
+
+        const duration = (4 + Math.random() * 4).toFixed(2);
+        particle.style.animationDuration = duration + 's';
+
+        const size = (1.5 + Math.random() * 1.5).toFixed(2);
+        particle.style.fontSize = size + 'rem';
+
+        container.appendChild(particle);
+
+        particle.addEventListener('animationend', () => {
+          particle.remove();
+        });
+      }, 300);
+    }
+
+    // Dynamic Countdown Timer (Targeting Tonight 12:00 AM Midnight)
+    function startCountdown() {
+      // Target strictly tonight 12:00:00 AM midnight (00:00:00 of the upcoming day)
+      const targetTime = new Date();
+      targetTime.setHours(24, 0, 0, 0);
+
+      let celebrationTriggered = false;
 
       function update() {
         const current = new Date();
-        const diff = targetDate - current;
+        const diff = targetTime - current;
 
         if (diff <= 0) {
           document.getElementById('cd-days').innerText = '00';
           document.getElementById('cd-hours').innerText = '00';
           document.getElementById('cd-minutes').innerText = '00';
           document.getElementById('cd-seconds').innerText = '00';
-          triggerConfetti();
+
+          if (!celebrationTriggered) {
+            celebrationTriggered = true;
+            triggerConfetti();
+            startFloatingParticles();
+
+            // Reveal post-countdown romantic message container
+            const msgEl = document.getElementById('countdownFinishedMsg');
+            if (msgEl) {
+              msgEl.classList.remove('hidden');
+              setTimeout(() => {
+                msgEl.classList.remove('opacity-0', 'translate-y-4');
+                msgEl.classList.add('opacity-100', 'translate-y-0');
+              }, 50);
+            }
+          }
           return;
         }
 
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
         const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
         const seconds = Math.floor((diff / 1000) % 60);
 
-        document.getElementById('cd-days').innerText = String(days).padStart(2, '0');
-        document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
-        document.getElementById('cd-minutes').innerText = String(minutes).padStart(2, '0');
-        document.getElementById('cd-seconds').innerText = String(seconds).padStart(2, '0');
+        document.getElementById('cd-days').innerText = String(Math.max(0, days)).padStart(2, '0');
+        document.getElementById('cd-hours').innerText = String(Math.max(0, hours)).padStart(2, '0');
+        document.getElementById('cd-minutes').innerText = String(Math.max(0, minutes)).padStart(2, '0');
+        document.getElementById('cd-seconds').innerText = String(Math.max(0, seconds)).padStart(2, '0');
       }
 
       update();
@@ -1505,16 +1624,22 @@
     }
 
     // Tap-to-Reveal Card Flip
-    function toggleFlip(cardElement) {
-      cardElement.classList.toggle('flipped');
-      if (cardElement.classList.contains('flipped')) {
-        confetti({
-          particleCount: 25,
-          spread: 60,
-          origin: { y: 0.7 },
-          colors: ['#F43F5E', '#FB7185', '#FECDD3']
-        });
+    function toggleFlipCard(cardElement) {
+      const inner = cardElement.querySelector('.card-inner');
+      if (inner) {
+        inner.classList.toggle('[transform:rotateY(180deg)]');
+        if (inner.classList.contains('[transform:rotateY(180deg)]')) {
+          confetti({
+            particleCount: 25,
+            spread: 60,
+            origin: { y: 0.7 },
+            colors: ['#F43F5E', '#FB7185', '#FECDD3']
+          });
+        }
       }
+    }
+    function toggleFlip(cardElement) {
+      toggleFlipCard(cardElement);
     }
 
     // Secret Plan Unlock
@@ -1560,6 +1685,9 @@
       }
     }
   </script>
+
+  <!-- CONTINUOUS FLOATING ROMANTIC PARTICLES CONTAINER -->
+  <div id="floatingParticlesContainer" class="fixed inset-0 pointer-events-none z-40 overflow-hidden"></div>
 </body>
 
 </html>
