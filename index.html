@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Happy Birthday, Tamanna! 💕</title>
 
   <!-- Google Fonts -->
@@ -108,7 +108,7 @@
   </style>
 </head>
 
-<body class="font-sans bg-[#FFF5F5] text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900 pb-24">
+<body class="font-sans bg-[#FFF5F5] text-slate-800 antialiased selection:bg-rose-200 selection:text-rose-900 pb-24 overflow-x-hidden">
 
   <!-- Header Navigation -->
   <header class="fixed top-0 left-0 right-0 z-40 glass-card border-b border-rose-100/50 px-4 py-3">
@@ -125,40 +125,39 @@
     </div>
   </header>
 
-  <main class="max-w-5xl mx-auto px-4 pt-16">
+  <main class="max-w-5xl mx-auto px-4 pt-16 overflow-x-hidden">
 
     <!-- SECTION 1: HERO SECTION -->
     <section
-      class="relative min-h-[85vh] my-4 rounded-3xl overflow-hidden flex items-center justify-center text-center p-6 shadow-2xl">
-      <!-- Background Image with Gradient Overlay -->
+      class="relative min-h-[80vh] sm:min-h-[85vh] my-4 rounded-3xl overflow-hidden flex items-center justify-center text-center p-4 sm:p-6 shadow-2xl">
+      <!-- Background Image with Gradient Overlay (Primary Eager Loaded) -->
       <img src="./images/birthday girl.png"
         onerror="this.src='./image/WhatsApp Image 2024-09-18 at 10.26.10_4023a704.jpg'" alt="Hero Tamanna"
         class="absolute inset-0 w-full h-full object-cover">
       <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-rose-950/60 to-rose-900/40"></div>
 
       <!-- Hero Content -->
-      <div class="relative z-10 max-w-2xl mx-auto text-white space-y-6 pt-12">
+      <div class="relative z-10 max-w-2xl mx-auto text-white space-y-6 pt-8 sm:pt-12 px-2">
         <h1
-          class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight text-rose-50 drop-shadow-lg">
+          class="font-serif text-3xl sm:text-4xl md:text-6xl font-bold leading-tight tracking-tight text-rose-50 drop-shadow-lg">
           Happy Birthday, <br class="sm:hidden" /><span class="italic text-rose-300 font-normal">Tamanna</span>
         </h1>
 
-        <p class="text-sm sm:text-lg text-rose-100/90 font-light leading-relaxed max-w-xl mx-auto">
+        <p class="text-xs sm:text-base md:text-lg text-rose-100/90 font-light leading-relaxed max-w-xl mx-auto">
           To the person who paints my world in soft pinks and radiant smiles. Today is all about celebrating your
           presence, your laughter, and the beautiful soul you are.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-          <a href="#secret" onclick="triggerConfetti()"
-            class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold shadow-lg shadow-rose-500/30 hover:shadow-rose-500/50 hover:scale-105 transition-all flex items-center justify-center gap-2">
-            <i data-lucide="gift" class="w-5 h-5"></i>
-            Open Your Surprise
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3 w-full sm:w-auto px-2 pt-4">
+          <a href="#cake-section" onclick="triggerConfetti()"
+            class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold shadow-lg shadow-rose-500/30 hover:shadow-rose-500/50 hover:scale-105 transition-all flex items-center justify-center gap-2">
+            <span>🎂 কেক কাটতে চলো</span>
           </a>
-          <button onclick="toggleMusic()"
-            class="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center justify-center gap-2">
-            <i data-lucide="music" class="w-5 h-5"></i>
-            <span id="heroMusicBtnText">Play Our Song</span>
-          </button>
+          <a href="#letter"
+            class="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+            <i data-lucide="gift" class="w-5 h-5 text-rose-300"></i>
+            <span>🎁 Claim Your Gift</span>
+          </a>
         </div>
       </div>
     </section>
@@ -193,16 +192,134 @@
       </div>
     </section>
 
+    <!-- SECTION 2.5: INTERACTIVE CAKE CUTTING & CANDLE BLOWING GAME -->
+    <section id="cake-section" class="my-12 sm:my-16 px-4 overflow-x-hidden">
+      <div
+        class="relative bg-[#0B0F17] rounded-3xl p-5 sm:p-10 md:p-12 border border-rose-500/30 text-center shadow-2xl overflow-hidden max-w-4xl mx-auto">
+        <!-- Ambient Glowing Lights -->
+        <div class="absolute -top-12 left-1/4 w-72 h-72 bg-rose-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-12 right-1/4 w-72 h-72 bg-amber-500/15 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative z-10 space-y-4 sm:space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
+            <i data-lucide="cake" class="w-4 h-4 text-rose-400"></i>
+            <span>আমাদের মিষ্টি মুহূর্ত</span>
+          </div>
+
+          <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-rose-50">একটি সুন্দর ইচ্ছে করো এবং কেক কাটো</h2>
+          <p class="text-xs sm:text-sm text-rose-200/80 max-w-md mx-auto leading-relaxed px-2">
+            প্রথমে ভালোবেসে মোমবাতিগুলো নিভিয়ে দাও, তারপর আমার সাথে হাত মিলিয়ে জন্মদিনের কেক কেটে বিশেষ সারপ্রাইজটি আনলক
+            করো! 🎂💖
+          </p>
+
+          <!-- Cake & Candle Graphic Container -->
+          <div class="relative my-6 sm:my-8 py-2 sm:py-4 flex flex-col items-center justify-center">
+
+            <!-- Floating Animated Knife Element -->
+            <div id="cakeKnife"
+              class="absolute -top-6 left-1/2 -translate-x-1/2 opacity-0 pointer-events-none transition-all duration-700 z-20">
+              <span class="text-3xl sm:text-4xl md:text-5xl drop-shadow-2xl transform -rotate-45 block">🔪</span>
+            </div>
+
+            <!-- Cake Wrapper -->
+            <div id="cakeContainer"
+              class="relative group cursor-pointer transition-transform duration-300 hover:scale-105">
+
+              <!-- Candle Flames Container -->
+              <div class="flex items-center justify-center gap-4 sm:gap-6 mb-2">
+                <!-- Candle 1 -->
+                <div class="flex flex-col items-center">
+                  <div id="flame1"
+                    class="flame-element w-3.5 sm:w-4 h-5 sm:h-6 bg-gradient-to-t from-amber-500 via-yellow-300 to-white rounded-full shadow-[0_0_12px_#f59e0b] animate-pulse transition-all duration-500">
+                  </div>
+                  <div class="w-1.5 h-6 sm:h-8 bg-rose-300 rounded-t-sm shadow-sm"></div>
+                </div>
+                <!-- Candle 2 (Center) -->
+                <div class="flex flex-col items-center -mt-2">
+                  <div id="flame2"
+                    class="flame-element w-3.5 sm:w-4 h-6 sm:h-7 bg-gradient-to-t from-amber-500 via-yellow-300 to-white rounded-full shadow-[0_0_15px_#f59e0b] animate-pulse transition-all duration-500">
+                  </div>
+                  <div class="w-2 h-8 sm:h-10 bg-amber-200 rounded-t-sm shadow-sm"></div>
+                </div>
+                <!-- Candle 3 -->
+                <div class="flex flex-col items-center">
+                  <div id="flame3"
+                    class="flame-element w-3.5 sm:w-4 h-5 sm:h-6 bg-gradient-to-t from-amber-500 via-yellow-300 to-white rounded-full shadow-[0_0_12px_#f59e0b] animate-pulse transition-all duration-500">
+                  </div>
+                  <div class="w-1.5 h-6 sm:h-8 bg-pink-300 rounded-t-sm shadow-sm"></div>
+                </div>
+              </div>
+
+              <!-- Layered Cake Graphic -->
+              <div class="relative w-48 sm:w-64 md:w-80 h-32 sm:h-40 md:h-48 mx-auto flex flex-col items-center justify-end">
+                <!-- Top Frosting Layer -->
+                <div
+                  class="w-40 sm:w-56 md:w-64 h-10 sm:h-14 md:h-16 bg-gradient-to-r from-pink-400 via-rose-300 to-pink-400 rounded-t-2xl sm:rounded-t-3xl shadow-inner border-b-2 sm:border-b-4 border-rose-400 relative overflow-hidden flex items-center justify-center">
+                  <div class="absolute inset-x-0 bottom-0 h-2 sm:h-3 bg-white/40 rounded-full"></div>
+                  <span class="text-rose-950 font-serif italic text-[11px] sm:text-xs md:text-sm font-bold tracking-wide">Tamanna
+                    💕</span>
+                </div>
+                <!-- Middle Layer -->
+                <div
+                  class="w-44 sm:w-64 md:w-72 h-10 sm:h-14 md:h-16 bg-gradient-to-r from-rose-500 via-pink-500 to-rose-500 border-b-2 sm:border-b-4 border-rose-600 relative overflow-hidden">
+                  <div class="flex justify-around items-center h-full px-2 sm:px-4 text-[10px] sm:text-xs">
+                    <span>🍓</span>
+                    <span>✨</span>
+                    <span>🍓</span>
+                    <span>✨</span>
+                    <span>🍓</span>
+                  </div>
+                </div>
+                <!-- Bottom Base Layer -->
+                <div
+                  class="w-48 sm:w-72 md:w-80 h-10 sm:h-14 md:h-16 bg-gradient-to-r from-amber-100 via-rose-100 to-amber-100 rounded-b-xl sm:rounded-b-2xl shadow-xl relative border-t sm:border-t-2 border-rose-300 flex items-center justify-center">
+                  <span class="text-rose-500 text-[10px] sm:text-xs tracking-widest font-bold uppercase">Happy Birthday</span>
+                </div>
+                <!-- Cake Plate Base -->
+                <div
+                  class="w-56 sm:w-80 md:w-96 h-3 sm:h-4 bg-gradient-to-r from-slate-700 via-slate-300 to-slate-700 rounded-full shadow-2xl -mb-1 sm:-mb-2">
+                </div>
+
+                <!-- Slice Cut Line (Initially Hidden) -->
+                <div id="cakeSliceLine"
+                  class="absolute inset-y-0 left-1/2 w-1 bg-white/90 opacity-0 shadow-[0_0_12px_#ffffff] transition-opacity duration-300 pointer-events-none">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Interactive Control Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
+            <button id="blowBtn" onclick="blowCandles()"
+              class="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 text-sm sm:text-base font-bold shadow-lg shadow-amber-500/30 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="wind" class="w-4 h-4"></i>
+              <span>💨 মোমবাতি নিভিয়ে দাও</span>
+            </button>
+            <button id="sliceBtn" onclick="sliceCake()"
+              class="w-full sm:w-auto px-6 sm:px-7 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 text-white text-sm sm:text-base font-bold shadow-lg shadow-rose-500/30 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="scissors" class="w-4 h-4"></i>
+              <span>🔪 একসাথে কেক কাটো</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 3: INTERACTIVE MILESTONE ROADMAP -->
-    <section id="story" class="my-16">
-      <div class="text-center mb-12">
+    <section id="story" class="my-12 sm:my-16 px-4 overflow-x-hidden">
+      <div class="text-center mb-10 sm:mb-12">
         <span class="text-rose-600 text-xs font-bold uppercase tracking-widest">Our Journey</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Every chapter feels like a dream</h2>
-        <p class="text-slate-600 text-sm sm:text-base max-w-md mx-auto mt-2">A look back at some of our favorite moments
+        <p class="text-slate-600 text-xs sm:text-base max-w-md mx-auto mt-2">A look back at some of our favorite moments
           and cherished memories together.</p>
       </div>
 
-      <div class="relative border-l-2 border-rose-300 ml-4 sm:ml-12 md:ml-16 space-y-12 pr-2 max-w-4xl mx-auto">
+      <div class="relative border-l-2 border-rose-300 ml-4 sm:ml-12 md:ml-16 space-y-10 sm:space-y-12 pr-2 max-w-4xl mx-auto">
 
         <!-- Timeline Item 1 -->
         <div class="relative pl-6 sm:pl-10 group">
@@ -214,9 +331,9 @@
 
             <!-- Image (Top on mobile, 58% width / 7 cols on md) -->
             <div
-              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm">
+              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm aspect-[4/3]">
               <img src="./images/The Spark of Wonder.png" onerror="this.src='./images/IMG20240531175511.jpg'"
-                alt="The Spark of Wonder"
+                alt="The Spark of Wonder" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src, 'The Spark of Wonder')">
             </div>
@@ -243,9 +360,9 @@
 
             <!-- Image (Top on mobile, 58% width / 7 cols on md) -->
             <div
-              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm">
+              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm aspect-[4/3]">
               <img src="./images/Golden Afternoons.png" onerror="this.src='./images/IMG20240531175610.jpg'"
-                alt="Golden Afternoons"
+                alt="Golden Afternoons" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src, 'Golden Afternoons')">
             </div>
@@ -272,9 +389,9 @@
 
             <!-- Image -->
             <div
-              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm">
+              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm aspect-[4/3]">
               <img src="./images/Unfiltered Joys.png" onerror="this.src='./images/IMG20240531180731.jpg'"
-                alt="Unfiltered Joys"
+                alt="Unfiltered Joys" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src, 'Unfiltered Joys')">
             </div>
@@ -301,9 +418,9 @@
 
             <!-- Image -->
             <div
-              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm">
+              class="md:col-span-7 overflow-hidden rounded-2xl h-64 sm:h-72 md:h-80 border border-rose-200/80 relative shadow-sm aspect-[4/3]">
               <img src="./images/Forever & Beyond.png" onerror="this.src='./images/IMG_20240703_104903_336.jpg'"
-                alt="Forever & Beyond"
+                alt="Forever & Beyond" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 cursor-pointer"
                 onclick="openLightbox(this.src, 'Forever & Beyond')">
             </div>
@@ -324,11 +441,11 @@
     </section>
 
     <!-- SECTION 4: PHOTO SCRAPBOOK GALLERY -->
-    <section id="gallery" class="my-16">
+    <section id="gallery" class="my-12 sm:my-16 px-4 overflow-x-hidden">
       <div class="text-center mb-10">
         <span class="text-rose-600 text-xs font-bold uppercase tracking-widest">Memories Gallery</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Moments I Keep Close in My Heart</h2>
-        <p class="text-slate-600 text-sm max-w-md mx-auto mt-2">Tap any photo to expand and relive the magic.</p>
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mt-2">Tap any photo to expand and relive the magic.</p>
       </div>
 
       <!-- Masonry Grid -->
@@ -336,7 +453,7 @@
 
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
-          <img src="./images/19.png" onerror="this.src='./image/19.png'" alt="Memory"
+          <img src="./images/19.png" onerror="this.src='./image/19.png'" alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Sweet Memory')">
           <div
@@ -347,7 +464,7 @@
 
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
-          <img src="./images/20.png" onerror="this.src='./image/20.png'" alt="Memory"
+          <img src="./images/20.png" onerror="this.src='./image/20.png'" alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Pure Happiness')">
           <div
@@ -358,7 +475,7 @@
 
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
-          <img src="./images/7.png" onerror="this.src='./image/7.png'" alt="Memory"
+          <img src="./images/7.png" onerror="this.src='./image/7.png'" alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Radiant Smile')">
           <div
@@ -369,7 +486,7 @@
 
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
-          <img src="./images/8.png" onerror="this.src='./image/8.png'" alt="Memory"
+          <img src="./images/8.png" onerror="this.src='./image/8.png'" alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Lovely Day')">
           <div
@@ -381,7 +498,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20240703_104918_568.jpg" onerror="this.src='./image/IMG_20240703_104918_568.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Cherished Times')">
           <div
@@ -393,7 +510,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20240703_133435_015.jpg" onerror="this.src='./image/IMG_20240703_133435_015.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Golden Hour')">
           <div
@@ -405,7 +522,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20240703_134119_753.jpg" onerror="this.src='./image/IMG_20240703_134119_753.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Unforgettable')">
           <div
@@ -417,7 +534,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20240808_101823_284.jpg" onerror="this.src='./image/IMG_20240808_101823_284.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Summer Warmth')">
           <div
@@ -429,7 +546,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115335_543.jpg" onerror="this.src='./image/IMG_20241227_115335_543.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Winter Charm')">
           <div
@@ -441,7 +558,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115340_641.jpg" onerror="this.src='./image/IMG_20241227_115340_641.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Warm Hugs')">
           <div
@@ -453,7 +570,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115354_742.jpg" onerror="this.src='./image/IMG_20241227_115354_742.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Precious Moments')">
           <div
@@ -465,7 +582,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115403_208.jpg" onerror="this.src='./image/IMG_20241227_115403_208.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Sweet Smile')">
           <div
@@ -477,7 +594,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115405_101.jpg" onerror="this.src='./image/IMG_20241227_115405_101.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Joyful Heart')">
           <div
@@ -489,7 +606,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115411_484.jpg" onerror="this.src='./image/IMG_20241227_115411_484.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Endless Smiles')">
           <div
@@ -501,7 +618,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115636_267.jpg" onerror="this.src='./image/IMG_20241227_115636_267.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Togetherness')">
           <div
@@ -513,7 +630,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115639_445.jpg" onerror="this.src='./image/IMG_20241227_115639_445.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Cozy Vibes')">
           <div
@@ -525,7 +642,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20241227_115742_340.jpg" onerror="this.src='./image/IMG_20241227_115742_340.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Special Magic')">
           <div
@@ -537,7 +654,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20250409_181711_137.jpg" onerror="this.src='./image/IMG_20250409_181711_137.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Spring Bloom')">
           <div
@@ -549,7 +666,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20250426_112621_138.jpg" onerror="this.src='./image/IMG_20250426_112621_138.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Laughter & Sunshine')">
           <div
@@ -561,7 +678,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20250426_112639_889.jpg" onerror="this.src='./image/IMG_20250426_112639_889.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Sweet Romance')">
           <div
@@ -573,7 +690,7 @@
         <div
           class="break-inside-avoid overflow-hidden rounded-2xl group relative shadow-md hover:shadow-xl transition-all">
           <img src="./images/IMG_20250426_114907_466.jpg" onerror="this.src='./image/IMG_20250426_114907_466.jpg'"
-            alt="Memory"
+            alt="Memory" loading="lazy" decoding="async"
             class="w-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
             onclick="openLightbox(this.src, 'Always & Forever')">
           <div
@@ -586,19 +703,19 @@
     </section>
 
     <!-- SECTION 5: TAP-TO-REVEAL CARDS (Tamanna & Sani Special) -->
-    <section id="reasons" class="my-16">
+    <section id="reasons" class="my-12 sm:my-16 px-4 overflow-x-hidden">
       <div class="text-center mb-10">
         <span class="text-rose-600 text-xs font-bold uppercase tracking-widest">Tamanna & Sani Special</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">8 Reasons You Are My Favorite Person
         </h2>
-        <p class="text-slate-600 text-sm max-w-md mx-auto mt-2">Tap each card to reveal the photo and my personal
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto mt-2">Tap each card to reveal the photo and my personal
           message for you ✨</p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
 
         <!-- Reason Card 1 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -621,7 +738,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/birthday girl.png" onerror="this.src='./image/birthday girl.png'"
-                  alt="Your Radiant Kindness" class="w-full h-full object-cover object-center">
+                  alt="Your Radiant Kindness" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -633,7 +750,7 @@
         </div>
 
         <!-- Reason Card 2 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -656,7 +773,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/smile.png" onerror="this.src='./image/IMG_20241227_115335_543.jpg'"
-                  alt="Your Infectious Laugh" class="w-full h-full object-cover object-center">
+                  alt="Your Infectious Laugh" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -668,7 +785,7 @@
         </div>
 
         <!-- Reason Card 3 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -690,7 +807,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/couple.jpeg" onerror="this.src='./image/couple.jpeg'" alt="My Safest Haven"
-                  class="w-full h-full object-cover object-center">
+                  loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -702,7 +819,7 @@
         </div>
 
         <!-- Reason Card 4 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -725,7 +842,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/Unfiltered Joys.png" onerror="this.src='./image/Unfiltered Joys.png'"
-                  alt="Your Expressive Eyes" class="w-full h-full object-cover object-center">
+                  alt="Your Expressive Eyes" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -737,7 +854,7 @@
         </div>
 
         <!-- Reason Card 5 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -760,7 +877,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/Our Late-Night Talks.png" onerror="this.src='./image/IMG_20250426_112639_889.jpg'"
-                  alt="Our Late-Night Talks" class="w-full h-full object-cover object-center">
+                  alt="Our Late-Night Talks" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -772,7 +889,7 @@
         </div>
 
         <!-- Reason Card 6 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -795,7 +912,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/Golden Afternoons.png" onerror="this.src='./image/Golden Afternoons.png'"
-                  alt="My Greatest Strength" class="w-full h-full object-cover object-center">
+                  alt="My Greatest Strength" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -807,7 +924,7 @@
         </div>
 
         <!-- Reason Card 7 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -829,7 +946,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/Forever & Beyond.png" onerror="this.src='./image/Forever & Beyond.png'"
-                  alt="Our Shared Future" class="w-full h-full object-cover object-center">
+                  alt="Our Shared Future" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -842,7 +959,7 @@
         </div>
 
         <!-- Reason Card 8 -->
-        <div class="flip-card h-[400px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
+        <div class="flip-card h-[380px] sm:h-[420px] cursor-pointer group" onclick="toggleFlip(this)">
           <div class="flip-card-inner relative w-full h-full">
             <!-- Front Face -->
             <div
@@ -865,7 +982,7 @@
               <div
                 class="w-full h-44 sm:h-48 rounded-xl overflow-hidden shadow-md border-2 border-white/90 bg-white/20 shrink-0">
                 <img src="./images/candle light.png" onerror="this.src='./image/candle light.png'"
-                  alt="Simply Being Tamanna" class="w-full h-full object-cover object-center">
+                  alt="Simply Being Tamanna" loading="lazy" decoding="async" class="w-full h-full object-cover object-center">
               </div>
               <div class="py-2 text-center flex-grow flex items-center justify-center">
                 <p class="text-xs sm:text-sm leading-relaxed font-sans font-medium text-rose-50 px-1">
@@ -880,14 +997,14 @@
     </section>
 
     <!-- SECTION 6: ROMANTIC BIRTHDAY LETTER -->
-    <section id="letter" class="my-16">
+    <section id="letter" class="my-12 sm:my-16 px-4 overflow-x-hidden">
       <div
-        class="max-w-3xl mx-auto paper-texture rounded-3xl p-8 sm:p-12 shadow-2xl border-2 border-rose-200/80 relative overflow-hidden">
+        class="max-w-3xl mx-auto paper-texture rounded-3xl p-6 sm:p-12 shadow-2xl border-2 border-rose-200/80 relative overflow-hidden">
 
         <!-- Decorative stamp / icon -->
         <div
-          class="absolute top-6 right-6 w-12 h-12 rounded-full bg-rose-100 border border-rose-300 flex items-center justify-center text-rose-600">
-          <i data-lucide="mail" class="w-6 h-6"></i>
+          class="absolute top-6 right-6 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-rose-100 border border-rose-300 flex items-center justify-center text-rose-600">
+          <i data-lucide="mail" class="w-5 h-5 sm:w-6 sm:h-6"></i>
         </div>
 
         <div class="space-y-6 text-slate-700 leading-relaxed font-serif text-base sm:text-lg">
@@ -921,48 +1038,97 @@
     </section>
 
     <!-- SECTION 7: 3-CARD WARM WISHES & BLESSINGS GRID -->
-    <section class="my-16">
+    <section class="my-12 sm:my-16 px-4 overflow-x-hidden">
       <div class="text-center mb-10">
         <span class="text-rose-600 text-xs font-bold uppercase tracking-widest">Wishes For Your Year</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">May Your Year Ahead Be Filled With...
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-        <div class="glass-card rounded-2xl p-6 border-t-4 border-t-rose-500 shadow-lg text-center space-y-3">
-          <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center mx-auto">
-            <i data-lucide="sun" class="w-6 h-6"></i>
+        <!-- Card 1: Unending Happiness -->
+        <div
+          class="bg-white/80 backdrop-blur-md rounded-3xl p-6 border border-rose-100/70 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:border-rose-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-full h-44 rounded-2xl overflow-hidden mb-5 relative aspect-[16/10]">
+              <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80"
+                alt="Unending Happiness" loading="lazy" decoding="async"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+              <div
+                class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/80 backdrop-blur-md text-rose-500 flex items-center justify-center shadow-md border border-white/50 group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+                <i data-lucide="heart" class="w-5 h-5 animate-pulse"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slate-800 group-hover:text-rose-600 transition-colors">
+              Unending Happiness</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+              May every morning greet you with reasons to smile, peace in your mind, and lightness in your heart.
+            </p>
           </div>
-          <h3 class="font-serif text-xl font-bold text-slate-800">Unending Happiness</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">May every morning greet you with reasons to
-            smile, peace in your mind, and lightness in your heart.</p>
         </div>
 
-        <div class="glass-card rounded-2xl p-6 border-t-4 border-t-pink-500 shadow-lg text-center space-y-3">
-          <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center mx-auto">
-            <i data-lucide="compass" class="w-6 h-6"></i>
+        <!-- Card 2: Exciting Adventures -->
+        <div
+          class="bg-white/80 backdrop-blur-md rounded-3xl p-6 border border-rose-100/70 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:border-rose-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-full h-44 rounded-2xl overflow-hidden mb-5 relative aspect-[16/10]">
+              <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"
+                alt="Exciting Adventures" loading="lazy" decoding="async"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+              <div
+                class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/80 backdrop-blur-md text-pink-500 flex items-center justify-center shadow-md border border-white/50 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                <i data-lucide="compass" class="w-5 h-5 group-hover:rotate-45 transition-transform duration-500"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slate-800 group-hover:text-pink-600 transition-colors">
+              Exciting Adventures</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+              May you explore new places, discover new passions, and fulfill every dream you set your sight on.
+            </p>
           </div>
-          <h3 class="font-serif text-xl font-bold text-slate-800">Exciting Adventures</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">May you explore new places, discover new
-            passions, and fulfill every dream you set your sight on.</p>
         </div>
 
-        <div class="glass-card rounded-2xl p-6 border-t-4 border-t-rose-600 shadow-lg text-center space-y-3">
-          <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-700 flex items-center justify-center mx-auto">
-            <i data-lucide="shield-check" class="w-6 h-6"></i>
+        <!-- Card 3: Health & Serenity -->
+        <div
+          class="bg-white/80 backdrop-blur-md rounded-3xl p-6 border border-rose-100/70 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:border-rose-300 group flex flex-col justify-between">
+          <div>
+            <div class="w-full h-44 rounded-2xl overflow-hidden mb-5 relative aspect-[16/10]">
+              <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
+                alt="Health & Serenity" loading="lazy" decoding="async"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+              <div
+                class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/80 backdrop-blur-md text-rose-600 flex items-center justify-center shadow-md border border-white/50 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+                <i data-lucide="sparkles" class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slate-800 group-hover:text-rose-700 transition-colors">
+              Health & Serenity</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+              Wishing you robust health, tranquil moments of rest, and the warmth of true companionship always.
+            </p>
           </div>
-          <h3 class="font-serif text-xl font-bold text-slate-800">Health & Serenity</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">Wishing you robust health, tranquil moments of
-            rest, and the warmth of true companionship always.</p>
+        </div>
+
+      </div>
+    </section>
+                class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/80 backdrop-blur-md text-rose-600 flex items-center justify-center shadow-md border border-white/50 group-hover:scale-110 group-hover:bg-rose-600 group-hover:text-white transition-all duration-300">
+                <i data-lucide="sparkles" class="w-5 h-5 group-hover:rotate-12 transition-transform duration-300"></i>
+              </div>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-slate-800 group-hover:text-rose-700 transition-colors">
+              Health & Serenity</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+              Wishing you robust health, tranquil moments of rest, and the warmth of true companionship always.
+            </p>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SECTION 8: TONIGHT'S SECRET PLAN REVEAL CARD -->
     <!-- SECTION 8: STORYTELLING & TIMELINE SECTION -->
-    <section id="secret" class="my-20 relative px-4">
+    <section id="secret" class="my-16 sm:my-20 relative px-4 overflow-x-hidden">
       <!-- Background Ambient Glow -->
       <div
         class="absolute inset-0 bg-[#0B0F17] rounded-3xl -z-10 overflow-hidden border border-amber-500/20 shadow-2xl shadow-amber-950/40">
@@ -972,10 +1138,10 @@
         </div>
       </div>
 
-      <div class="max-w-5xl mx-auto py-12 sm:py-16 px-4 sm:px-8">
+      <div class="max-w-5xl mx-auto py-10 sm:py-16 px-4 sm:px-8">
 
         <!-- Header -->
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
           <div
             class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
             <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
@@ -998,7 +1164,7 @@
           </div>
 
           <!-- Card 1 -->
-          <div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-12 group">
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12 group">
             <!-- Center Node (Desktop) -->
             <div
               class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#0B0F17] border-2 border-amber-400 shadow-[0_0_20px_rgba(245,158,11,0.5)] items-center justify-center text-amber-300 z-10">
@@ -1007,9 +1173,9 @@
 
             <!-- Image Container (Left on desktop) -->
             <div
-              class="w-full md:w-1/2 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 relative aspect-[4/3] group-hover:border-amber-500/40 transition-all duration-500">
+              class="w-full md:w-1/2 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 relative h-64 sm:h-80 md:h-[420px] aspect-[4/3] group-hover:border-amber-500/40 transition-all duration-500">
               <img src="./images/আমাদের নিজস্ব স্বপ্নের বাড়ি.png" onerror="this.src='./images/IMG20240531175511.jpg'"
-                alt="আমাদের নিজস্ব স্বপ্নের বাড়ি"
+                alt="আমাদের নিজস্ব স্বপ্নের বাড়ি" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out cursor-pointer"
                 onclick="openLightbox(this.src, 'আমাদের নিজস্ব স্বপ্নের বাড়ি')">
               <div
@@ -1035,7 +1201,7 @@
           </div>
 
           <!-- Card 2 (Reversed layout on desktop) -->
-          <div class="relative flex flex-col md:flex-row-reverse items-center gap-8 md:gap-12 group">
+          <div class="relative flex flex-col md:flex-row-reverse items-center gap-6 md:gap-12 group">
             <!-- Center Node (Desktop) -->
             <div
               class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#0B0F17] border-2 border-amber-400 shadow-[0_0_20px_rgba(245,158,11,0.5)] items-center justify-center text-amber-300 z-10">
@@ -1044,9 +1210,9 @@
 
             <!-- Image Container (Right on desktop) -->
             <div
-              class="w-full md:w-1/2 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 relative aspect-[4/3] group-hover:border-amber-500/40 transition-all duration-500">
+              class="w-full md:w-1/2 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 relative h-64 sm:h-80 md:h-[420px] aspect-[4/3] group-hover:border-amber-500/40 transition-all duration-500">
               <img src="./images/একসাথে কেক কাটা ও গল্প.png" onerror="this.src='./images/IMG20240531175610.jpg'"
-                alt="একসাথে কেক কাটা ও গল্প"
+                alt="একসাথে কেক কাটা ও গল্প" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out cursor-pointer"
                 onclick="openLightbox(this.src, 'একসাথে কেক কাটা ও গল্প')">
               <div
@@ -1071,7 +1237,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="relative flex flex-col md:flex-row items-center gap-8 md:gap-12 group">
+          <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-12 group">
             <!-- Center Node (Desktop) -->
             <div
               class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-[#0B0F17] border-2 border-amber-400 shadow-[0_0_20px_rgba(245,158,11,0.5)] items-center justify-center text-amber-300 z-10">
@@ -1080,9 +1246,9 @@
 
             <!-- Image Container (Left on desktop) -->
             <div
-              class="w-full md:w-1/2 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 relative aspect-[4/3] group-hover:border-amber-500/40 transition-all duration-500">
+              class="w-full md:w-1/2 overflow-hidden rounded-2xl border border-white/10 shadow-2xl shadow-black/60 relative h-64 sm:h-80 md:h-[420px] aspect-[4/3] group-hover:border-amber-500/40 transition-all duration-500">
               <img src="./images/ছাদে তারাদের সাথে দেখা.png" onerror="this.src='./images/IMG20240531180731.jpg'"
-                alt="ছাদে তারাদের সাথে দেখা"
+                alt="ছাদে তারাদের সাথে দেখা" loading="lazy" decoding="async"
                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out cursor-pointer"
                 onclick="openLightbox(this.src, 'ছাদে তারাদের সাথে দেখা')">
               <div
@@ -1110,7 +1276,7 @@
 
         <!-- Revealed Special Note Footer Card -->
         <div
-          class="mt-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-amber-500/10 via-rose-500/10 to-amber-500/10 border border-amber-500/20 text-center font-serif italic text-sm sm:text-base text-amber-200 leading-relaxed shadow-xl backdrop-blur-md">
+          class="mt-12 sm:mt-16 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-amber-500/10 via-rose-500/10 to-amber-500/10 border border-amber-500/20 text-center font-serif italic text-xs sm:text-base text-amber-200 leading-relaxed shadow-xl backdrop-blur-md">
           "জান, পড়াশোনার জন্য আজ আমরা যত দূরেই থাকি না কেন, আমার মনের সবচেয়ে কাছে তুমিই আছো। আমাদের স্বপ্নের বাড়ি,
           আমাদের ছোট্ট সংসার, সব কিছু পূরণ হবে খুব তাড়াতাড়ি। শুভ জন্মদিন, আমার সবচেয়ে সুন্দর স্বপ্ন!"
         </div>
@@ -1121,7 +1287,7 @@
   </main>
 
   <!-- SECTION 9: FOOTER -->
-  <footer class="mt-20 border-t border-rose-200/60 pt-12 pb-24 text-center px-4">
+  <footer class="mt-16 sm:mt-20 border-t border-rose-200/60 pt-12 pb-24 text-center px-4 overflow-x-hidden">
     <div class="max-w-5xl mx-auto space-y-4">
       <div class="font-serif italic text-2xl sm:text-3xl font-bold text-rose-700">
         "You are my today and all of my tomorrows."
@@ -1141,21 +1307,74 @@
 
   <!-- LIGHTBOX MODAL -->
   <div id="lightboxModal"
-    class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4"
+    class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 overflow-x-hidden"
     onclick="closeLightbox()">
     <div class="relative max-w-3xl w-full max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
       <button onclick="closeLightbox()"
         class="absolute -top-12 right-0 text-white hover:text-rose-300 transition-colors">
         <i data-lucide="x" class="w-8 h-8"></i>
       </button>
-      <img id="lightboxImg" src="" alt="Enlarged Memory"
+      <img id="lightboxImg" src="" alt="Enlarged Memory" loading="lazy" decoding="async"
         class="max-h-[75vh] w-auto object-contain rounded-2xl shadow-2xl border border-rose-300/20">
       <p id="lightboxCaption" class="text-rose-200 font-serif text-lg mt-4 text-center"></p>
     </div>
   </div>
 
+  <!-- SURPRISE LOVE POPUP MODAL ON CAKE SLICE -->
+  <div id="surpriseLoveModal"
+    class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 transition-all duration-500 overflow-x-hidden"
+    onclick="closeSurpriseModal()">
+    <div
+      class="relative w-[92%] sm:w-full max-w-lg max-h-[85vh] overflow-y-auto bg-slate-900/95 border border-rose-500/40 rounded-2xl p-4 sm:p-6 text-center shadow-2xl shadow-rose-950/80 transform transition-all duration-300"
+      onclick="event.stopPropagation()">
+
+      <!-- Ambient Lights -->
+      <div class="absolute -top-10 -right-10 w-40 h-40 bg-rose-500/20 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-amber-500/20 rounded-full blur-2xl pointer-events-none">
+      </div>
+
+      <!-- Close X Button -->
+      <button onclick="closeSurpriseModal()"
+        class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors z-20">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <!-- Couple Photo Header (Uncropped Full Image) -->
+      <div
+        class="relative w-full rounded-2xl overflow-hidden mb-5 bg-black/20 p-1 border border-rose-500/20 shadow-lg shadow-rose-500/10 flex items-center justify-center">
+        <img src="./image/kiss.png" onerror="this.src='./images/kiss.png'" alt="Sani & Tamanna" loading="lazy" decoding="async"
+          class="w-full h-auto max-h-[45vh] sm:max-h-[50vh] object-contain rounded-2xl mx-auto">
+        <div
+          class="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-slate-950/80 to-transparent pointer-events-none rounded-b-2xl">
+        </div>
+        <span
+          class="absolute bottom-3 left-4 text-xs font-semibold text-rose-200 bg-slate-950/75 backdrop-blur-md px-3.5 py-1 rounded-full border border-rose-300/30">Tamanna
+          & Sani Forever 💕</span>
+      </div>
+
+      <!-- Heading -->
+      <h3 class="font-serif text-xl sm:text-3xl font-bold text-rose-100 mb-3 drop-shadow">
+        শুভ জন্মদিন আমার ভালোবাসা! 🎂💖
+      </h3>
+
+      <!-- Heartfelt Message -->
+      <p class="text-xs sm:text-sm text-slate-300 font-sans leading-relaxed mb-6 font-light">
+        আজকের এই রাতটা শুধুই তোমার। দূরত্ব হয়তো আজ আমাদের কেকটা একসাথে হাত ধরে কাটতে দিল না, কিন্তু আমার প্রতিটি
+        নিঃশ্বাসে আর প্রার্থনায় শুধুই তুমি আছো। আমাদের সেই ছোট্ট স্বপ্নের ঘর আর এক ছাদের নিচে থাকার দিন খুব বেশি দূরে
+        নয়। আমি তোমাকে খুব ভালোবাসি, সবসময় বাসব।
+      </p>
+
+      <!-- Dismiss Button -->
+      <button onclick="acceptSurpriseLove()"
+        class="w-full py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 text-white font-bold shadow-lg shadow-rose-500/40 hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2">
+        <i data-lucide="heart" class="w-5 h-5 fill-white animate-pulse"></i>
+        <span>আমার ভালোবাসা গ্রহণ করো ✨</span>
+      </button>
+    </div>
+  </div>
+
   <!-- AUDIO ELEMENT (Royalty-free Romantic Track) -->
-  <audio id="bgMusic" loop
+  <audio id="bgMusic" loop preload="none"
     src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3"></audio>
 
   <!-- JAVASCRIPT LOGIC -->
@@ -1173,15 +1392,16 @@
       });
     }
 
-    // Dynamic Countdown Timer (Targeting Birthday)
+    // Dynamic Countdown Timer (Targeting Tonight 12:00 AM / 5th Midnight)
     function startCountdown() {
-      // Set target to upcoming birthday date
       const now = new Date();
       let targetYear = now.getFullYear();
-      let targetDate = new Date(targetYear, 8, 25, 0, 0, 0); // Sept 25
+      let targetMonth = now.getMonth();
+      // Target midnight 00:00:00 of the 5th
+      let targetDate = new Date(targetYear, targetMonth, 5, 0, 0, 0);
 
       if (now > targetDate) {
-        targetDate = new Date(targetYear + 1, 8, 25, 0, 0, 0);
+        targetDate = new Date(targetYear, targetMonth + 1, 5, 0, 0, 0);
       }
 
       function update() {
@@ -1193,6 +1413,7 @@
           document.getElementById('cd-hours').innerText = '00';
           document.getElementById('cd-minutes').innerText = '00';
           document.getElementById('cd-seconds').innerText = '00';
+          triggerConfetti();
           return;
         }
 
@@ -1211,6 +1432,77 @@
       setInterval(update, 1000);
     }
     startCountdown();
+
+    // Interactive Cake Cutting & Candle Blowing State
+    let candlesBlown = false;
+
+    function blowCandles() {
+      const flames = document.querySelectorAll('.flame-element');
+      flames.forEach(flame => {
+        flame.style.opacity = '0';
+        flame.style.transform = 'scale(0)';
+      });
+      candlesBlown = true;
+      const blowBtn = document.getElementById('blowBtn');
+      if (blowBtn) {
+        blowBtn.innerHTML = '<i data-lucide="sparkles" class="w-4 h-4"></i><span>মোমবাতি নেভানো হয়েছে! 🕯️</span>';
+        blowBtn.classList.remove('from-amber-500', 'to-yellow-500');
+        blowBtn.classList.add('from-slate-700', 'to-slate-800', 'text-slate-300');
+        blowBtn.disabled = true;
+        lucide.createIcons();
+      }
+      triggerConfetti();
+    }
+
+    function sliceCake() {
+      if (!candlesBlown) {
+        blowCandles();
+      }
+
+      const knife = document.getElementById('cakeKnife');
+      const sliceLine = document.getElementById('cakeSliceLine');
+
+      if (knife) {
+        knife.style.opacity = '1';
+        knife.style.transform = 'translate(-50%, 70px) rotate(0deg)';
+      }
+      if (sliceLine) {
+        sliceLine.style.opacity = '1';
+      }
+
+      triggerConfetti();
+
+      setTimeout(() => {
+        openSurpriseModal();
+      }, 700);
+    }
+
+    function openSurpriseModal() {
+      const modal = document.getElementById('surpriseLoveModal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        lucide.createIcons();
+      }
+    }
+
+    function closeSurpriseModal() {
+      const modal = document.getElementById('surpriseLoveModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    function acceptSurpriseLove() {
+      closeSurpriseModal();
+      confetti({
+        particleCount: 60,
+        spread: 80,
+        origin: { y: 0.6 },
+        colors: ['#F43F5E', '#FB7185', '#FFFFFF']
+      });
+    }
 
     // Tap-to-Reveal Card Flip
     function toggleFlip(cardElement) {
